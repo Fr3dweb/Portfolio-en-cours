@@ -1,0 +1,251 @@
+@font-face {
+    font-family: 'librebaskerville';
+    src: url('/webfontkit-20220518-083436/librebaskerville-bold-webfont.eot') format('eot'),
+         url('/webfontkit-20220518-083436/librebaskerville-bold-webfont.svg') format('svg'),
+         url('/webfontkit-20220518-083436/librebaskerville-bold-webfont.woff') format('woff'),
+         url('/webfontkit-20220518-083436/librebaskerville-bold-webfont.woff2') format('woff2'),
+         url('/webfontkit-20220518-083436/librebaskerville-italic-webfont.eot') format('eot'),
+         url('/webfontkit-20220518-083436/librebaskerville-italic-webfont.svg') format('svg'),
+         url('/webfontkit-20220518-083436/librebaskerville-italic-webfont.woff') format('woff'),
+         url('/webfontkit-20220518-083436/librebaskerville-italic-webfont.woff2') format('woff2'),
+         url('/webfontkit-20220518-083436/librebaskerville-regular-webfont.eot') format('oet');
+}
+
+body
+{
+  background-color: #000000;
+}
+
+.galerie
+{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.carre
+{
+  height: 50vh;
+  width: 33%;
+}
+
+.imageMarbre {
+  background-image: url(Marbre-or-blanc.png);
+}
+
+.rail
+{
+  background-image: url(rail.png) ;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+}
+
+.imageDev
+{
+  background-image: url(developpeur-web.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+}
+
+
+
+
+
+
+/* .carré2
+{
+  color: #B99A3B;
+  font-family: 'librebaskerville';
+  font-size: 20px ;
+  font-style: italic;
+  font-weight: bold ; */
+  /* height: 243px;
+  left: 666px; */
+  /* letter-spacing: 0;
+  position: absolute;
+  text-align: center;
+  top: 150px;
+}
+
+.carré3
+{
+
+}
+
+.carré4
+{
+
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+.hidden,
+.hidden * {
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.portfolio-fred-1 {
+  align-items: flex-start;
+  background-color: #da3535;
+  display: flex;
+  min-width: 1728px;
+  overflow-x: hidden;
+}
+
+.overlap-group3 {
+  height: 1117px;
+  position: relative;
+  width: 1730px;
+}
+
+.hello
+ {
+  color: #B99A3B;
+  font-family: 'librebaskerville';
+  font-size: 18px ;
+  font-style: italic;
+  font-weight: bold ;
+  height: 243px;
+  left: 666px;
+  letter-spacing: 0;
+  position: absolute;
+  text-align: center;
+  top: 163px;
+}
+
+.valign-text-middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.kek-amsterdam-papier-1 {
+  height: 558px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 576px;
+}
+
+.overlap-group {
+  align-items: flex-start;
+  background-color: #181818;
+  display: flex;
+  height: 1117px;
+  left: 0;
+  min-width: 1728px;
+  position: absolute;
+  top: 0;
+}
+
+.overlap-group2 {
+  align-self: flex-end;
+  height: 559px;
+  margin-bottom: -0.25px;
+  position: relative;
+  width: 576px;
+}
+
+.marbre
+ {
+  height: 558px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 1px;
+  width: 576px;
+}
+
+.rectangle-3 {
+  background-color: var(--scorpion);
+  height: 558px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 576px;
+}
+
+.title {
+  height: 40px;
+  left: 218px;
+  letter-spacing: 0;
+  position: absolute;
+  text-align: center;
+  top: 259px;
+}
+
+.flex-col {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.25px;
+  min-height: 1116px;
+  width: 576px;
+}
+
+.rectangle-2 {
+  background-color: var(--scorpion);
+  height: 558px;
+  width: 576px;
+}
+
+.rail
+ {
+   z-index: 3;
+  height: 557px;
+  object-fit: cover;
+  width: 576px;
+}
+
+.flex-col-1 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  min-height: 1116px;
+  width: 576px;
+}
+
+.metier-developpeur-web-1-1 {
+  height: 557px;
+  object-fit: cover;
+  width: 576px;
+}
+
+.overlap-group1 {
+  height: 559px;
+  position: relative;
+  width: 576px;
+}
+
+.rectangle-4 {
+  height: 558px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 576px;
+}
+
+.comptences {
+  height: 40px;
+  left: 1353px;
+  letter-spacing: 0;
+  position: absolute;
+  text-align: center;
+  top: 252px;
+} */
