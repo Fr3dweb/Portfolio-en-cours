@@ -51,8 +51,6 @@ body
 .imageMarbre
 {
   background-image: url(Marbre-or-blanc.png);
-
-
 }
 
 
@@ -76,4 +74,15 @@ body
 
 .black {
   color:#000000;
+}
+
+.index2
+{
+  background-color: black;
+  position:absolute;
+  top: 175px;
+  left: 315px;
+  width: 70%;
+  height:65%;
+  opacity: 0.97;
 }
