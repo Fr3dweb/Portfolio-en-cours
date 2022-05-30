@@ -76,6 +76,7 @@ body
   color:#000000;
 }
 
+/* PAGE "PROJET" */
 .index2
 {
   background-color: black;
@@ -86,6 +87,46 @@ body
   height:65%;
   opacity: 0.97;
 }
+
+h2
+{
+  display: flex;
+  flex-wrap: wrap;
+  color: #B99A3B;
+  font-family: 'librebaskerville';
+  font-size: 18px ;
+  font-style: italic;
+  font-weight: bold ;
+}
+
+.capturefirstsite
+{
+  margin-top: 20px;
+  width: 600px;
+  height: 300px;
+}
+
+.capture
+{
+  width: 600px;
+  height: 300px;
+  outline: solid 2px #E6E5E2;
+  transition: transform 1.2s;
+
+}
+
+.capture:hover
+{
+  -ms-transform: scale(2.5); /* IE 9 */
+  -webkit-transform: scale(2.5); /* Safari 3-8 */
+  transform: scale(2.5);
+  transition: transform 1.2s;
+  margin-left: 75%;
+  margin-top: 20%;
+}
+
+
+/* fin page "projet" */
 
 .index3
 {
