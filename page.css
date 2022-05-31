@@ -14,7 +14,7 @@
 body
 {
   background-color: #000000;
-  margin: 0;
+  margin: 0% 0% 0% 1%;
   font-family: 'librebaskerville';
   font-size: 18px ;
   font-style: italic;
@@ -79,52 +79,51 @@ body
 /* PAGE "PROJET" */
 .index2
 {
+  display: flex;
+  justify-content: space-around;
   background-color: black;
   position:absolute;
-  top: 175px;
-  left: 315px;
-  width: 70%;
-  height:65%;
+  top: 10%;
+  left: 11%;
+  width: 77%;
+  height:80%;
   opacity: 0.97;
 }
 
-h2
+
+.h2site
 {
-  display: flex;
-  flex-wrap: wrap;
   color: #B99A3B;
-  font-family: 'librebaskerville';
-  font-size: 18px ;
-  font-style: italic;
-  font-weight: bold ;
+  width: 90% ;
+  padding-left: 5%;
+  margin: 12% 0%;
 }
 
-.capturefirstsite
+.h2cv
 {
-  margin-top: 20px;
-  width: 600px;
-  height: 300px;
+  color: #B99A3B;
+  padding-left: 33%;
+  margin: 12% 0%;
 }
 
 .capture
 {
-  width: 600px;
-  height: 300px;
+  width: 800px;
+  height: 425px;
   outline: solid 2px #E6E5E2;
   transition: transform 1.2s;
-
+  display:block;
 }
 
 .capture:hover
 {
-  -ms-transform: scale(2.5); /* IE 9 */
-  -webkit-transform: scale(2.5); /* Safari 3-8 */
-  transform: scale(2.5);
+  -ms-transform: scale(2.2); /* IE 9 */
+  -webkit-transform: scale(2.2); /* Safari 3-8 */
+  transform: scale(2.2);
   transition: transform 1.2s;
-  margin-left: 75%;
-  margin-top: 20%;
+  display:block;
+ /*regarder translate*/
 }
-
 
 /* fin page "projet" */
 
