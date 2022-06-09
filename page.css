@@ -43,22 +43,35 @@ body
   font-weight: bold ;
   cursor: pointer;
 }
+
 .imageMarbre
 {
-  background-image: url(Marbre-or-blanc.png);
+  background-image: url(./images/Marbre-or-blanc.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
 .rail
 {
-  background-image: url(rail.png) ;
+  background-image: url(./images/rail.png) ;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.rail2
+{
+  background-image: url(./images/rail.png) ;
   background-repeat: no-repeat;
   background-size: cover;
   animation: animrail 2.5s ease;
 }
 .imagepc
 {
-  background-image: url(developpeur-web.png);
+  background-image: url(./images/developpeur-web.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.imagepc2
+{
+  background-image: url(./images/developpeur-web.png);
   background-repeat: no-repeat;
   background-size: cover;
   animation: animpc 2.5s ease ;
@@ -303,39 +316,50 @@ from {
   background-color: black;
   position:absolute;
   top: 10%;
-  left: 11%;
-  width: 77%;
+  left: 10%;
+  width: 80%;
   height:80%;
   opacity: 0.97;
 }
 .h2site
 {
   color: #B99A3B;
-  width: 90% ;
-  padding-left: 5%;
-  margin: 12% 0%;
+  text-align: center;
+  margin: 10% 0%;
 }
 .h2cv
 {
   color: #B99A3B;
-  padding-left: 33%;
-  margin: 12% 0%;
+  text-align: center;
+  margin: 10% 0%;
 }
-.capture
+.capture1
 {
-  width: 800px;
-  height: 425px;
+  width: 750px;
+  height: 450px;
   outline: solid 2px #E6E5E2;
-  transition: transform 1.2s;
-  display:block;
 }
-.capture:active
+.capture1:active
 {
-  -ms-transform: scale(2.2); /* IE 9 */
-  -webkit-transform: scale(2.2); /* Safari 3-8 */
-  transform: scale(2.2);
-  transition: transform 1.2s;
-  display:block;
+  -ms-transform: scale(2.1); /* IE 9 */
+  -webkit-transform: scale(2.1); /* Safari 3-8 */
+  transform: scale(2.1);
+  transition: transform 3s ;
+  transform: translateY(-20px) translateX(385px) scale(2.1);
+}
+.capture2
+{
+  width: 750px;
+  height: 450px;
+  outline: solid 2px #E6E5E2;
+}
+.capture2:active
+{
+  -ms-transform: scale(2.1); /* IE 9 */
+  -webkit-transform: scale(2.1); /* Safari 3-8 */
+  transform: scale(2.1);
+  transition: transform 3s ;
+  transform: translateY(-20px) translateX(-385px) scale(2.1);
 }
 /* fin page "projet" 
 -------------------*/
@@ -348,8 +372,8 @@ from {
   background-color: black;
   position:absolute;
   top: 10%;
-  left: 11%;
-  width: 77%;
+  left: 10%;
+  width: 80%;
   height:80%;
   opacity: 0.97;
 }
@@ -364,8 +388,8 @@ from {
   background-color: black;
   position:absolute;
   top: 10%;
-  left: 11%;
-  width: 77%;
+  left: 10%;
+  width: 80%;
   height:80%;
   opacity: 0.97;
 }
