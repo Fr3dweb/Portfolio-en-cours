@@ -1,83 +1,302 @@
 @font-face {
     font-family: 'librebaskerville';
-    src: url('/webfontkit-20220518-083436/librebaskerville-bold-webfont.eot') format('eot'),
-         url('/webfontkit-20220518-083436/librebaskerville-bold-webfont.svg') format('svg'),
-         url('/webfontkit-20220518-083436/librebaskerville-bold-webfont.woff') format('woff'),
-         url('/webfontkit-20220518-083436/librebaskerville-bold-webfont.woff2') format('woff2'),
-         url('/webfontkit-20220518-083436/librebaskerville-italic-webfont.eot') format('eot'),
-         url('/webfontkit-20220518-083436/librebaskerville-italic-webfont.svg') format('svg'),
-         url('/webfontkit-20220518-083436/librebaskerville-italic-webfont.woff') format('woff'),
-         url('/webfontkit-20220518-083436/librebaskerville-italic-webfont.woff2') format('woff2'),
-         url('/webfontkit-20220518-083436/librebaskerville-regular-webfont.eot') format('oet');
+    src: url('./webfontkit-20220518-083436/librebaskerville-bold-webfont.eot') format('eot'),
+         url('./webfontkit-20220518-083436/librebaskerville-bold-webfont.svg') format('svg'),
+         url('./webfontkit-20220518-083436/librebaskerville-bold-webfont.woff') format('woff'),
+         url('./webfontkit-20220518-083436/librebaskerville-bold-webfont.woff2') format('woff2'),
+         url('./webfontkit-20220518-083436/librebaskerville-italic-webfont.eot') format('eot'),
+         url('./webfontkit-20220518-083436/librebaskerville-italic-webfont.svg') format('svg'),
+         url('./webfontkit-20220518-083436/librebaskerville-italic-webfont.woff') format('woff'),
+         url('./webfontkit-20220518-083436/librebaskerville-italic-webfont.woff2') format('woff2'),
+         url('./webfontkit-20220518-083436/librebaskerville-regular-webfont.eot') format('eot');
 }
-
+:root
+{
+  font-size: 18px;
+}
 body
 {
   background-color: #000000;
-  margin: 0% 0% 0% 1%;
-  font-family: 'librebaskerville';
-  font-size: 18px ;
+  margin: auto;
+  font-family: 'librebaskerville', Helvetica, Arial, sans-serif;
   font-style: italic;
-  font-weight: bold ;
+  font-weight: bold;
 }
-
 .galerie
 {
   display: flex;
   flex-wrap: wrap; 
 }
-
 .carre
 {  
   height: 50vh;
-  width: 33%;  
+  width: 33.333%;  
   display: flex;
   align-items: center;
   justify-content: center;
   text-align:center;
 }
-
-
-
 .pop:hover
 {
   text-transform: uppercase;
   font-style: italic;
   font-weight: bold ;
+  cursor: pointer;
 }
-
-
-
 .imageMarbre
 {
   background-image: url(Marbre-or-blanc.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-
-
 .rail
 {
   background-image: url(rail.png) ;
   background-repeat: no-repeat;
   background-size: cover;
+  animation: animrail 2.5s ease;
 }
-
-.imageDev
+.imagepc
 {
   background-image: url(developpeur-web.png);
   background-repeat: no-repeat;
   background-size: cover;
+  animation: animpc 2.5s ease ;
 }
-
 .gold {
   color: #B99A3B;
 }
-
-.black {
-  color:#000000;
+.animtxt
+{
+  position: relative;
+  top: -330px;
+  right: -50px;
+  animation: animtxt 3s ease-in-out both;
+  animation-delay: 1s;
 }
-
-/* PAGE "PROJET" */
-.index2
+.animloisirs
+{
+  animation: animloisirs 2.5s ease ;
+}
+.animprojet
+{
+  animation: animprojet 2.5s ease ;
+}
+.animdev
+{
+  animation: animdev 2.5s ease;
+}
+/*Animations
+-----------*/
+ @keyframes animrail {
+  from {
+  transform: translateY(-1500px);
+}
+to{
+  transform: translateY(0px);
+}
+  100%,20%,53%,80% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, .61, .355, 1);
+    transition-timing-function: cubic-bezier(0.215, .61, .355, 1);
+    -webkit-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+40%, 43% {
+    -webkit-transition-timing-function: cubic-bezier(0.755, .050, .855, .060);
+    transition-timing-function: cubic-bezier(0.755, .050, .855, .060);
+    -webkit-transform: translate3d(0, -30px, 0);
+    -ms-transform: translate3d(0, -30px, 0);
+    transform: translate3d(0, -30px, 0);
+}
+70% {
+    -webkit-transition-timing-function: cubic-bezier(0.755, .050, .855, .060);
+    transition-timing-function: cubic-bezier(0.755, .050, .855, .060);
+    -webkit-transform: translate3d(0, -15px, 0);
+    -ms-transform: translate3d(0, -15px, 0);
+    transform: translate3d(0, -15px, 0);
+}
+90% {
+    -webkit-transform: translate3d(0, -4px, 0);
+    -ms-transform: translate3d(0, -4px, 0);
+    transform: translate3d(0, -4px, 0);
+}
+}
+@keyframes animpc {
+  from {
+    transform: translateY(-1500px);
+  }
+  to{
+    transform: translateY(0px);
+  }
+  100%,20%,53%,80% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, .61, .355, 1);
+    transition-timing-function: cubic-bezier(0.215, .61, .355, 1);
+    -webkit-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+40%, 43% {
+    -webkit-transition-timing-function: cubic-bezier(0.755, .050, .855, .060);
+    transition-timing-function: cubic-bezier(0.755, .050, .855, .060);
+    -webkit-transform: translate3d(0, -30px, 0);
+    -ms-transform: translate3d(0, -30px, 0);
+    transform: translate3d(0, -30px, 0);
+}
+70% {
+    -webkit-transition-timing-function: cubic-bezier(0.755, .050, .855, .060);
+    transition-timing-function: cubic-bezier(0.755, .050, .855, .060);
+    -webkit-transform: translate3d(0, -15px, 0);
+    -ms-transform: translate3d(0, -15px, 0);
+    transform: translate3d(0, -15px, 0);
+}
+90% {
+    -webkit-transform: translate3d(0, -4px, 0);
+    -ms-transform: translate3d(0, -4px, 0);
+    transform: translate3d(0, -4px, 0);
+}
+}
+@keyframes animloisirs {
+from {
+    transform: translateY(-1500px);
+}
+to{
+    transform: translateY(0px);
+}
+100%,20%,53%,80% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, .61, .355, 1);
+    transition-timing-function: cubic-bezier(0.215, .61, .355, 1);
+    -webkit-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+40%, 43% {
+    -webkit-transition-timing-function: cubic-bezier(0.755, .050, .855, .060);
+    transition-timing-function: cubic-bezier(0.755, .050, .855, .060);
+    -webkit-transform: translate3d(0, -30px, 0);
+    -ms-transform: translate3d(0, -30px, 0);
+    transform: translate3d(0, -30px, 0);
+}
+70% {
+    -webkit-transition-timing-function: cubic-bezier(0.755, .050, .855, .060);
+    transition-timing-function: cubic-bezier(0.755, .050, .855, .060);
+    -webkit-transform: translate3d(0, -15px, 0);
+    -ms-transform: translate3d(0, -15px, 0);
+    transform: translate3d(0, -15px, 0);
+}
+90% {
+    -webkit-transform: translate3d(0, -4px, 0);
+    -ms-transform: translate3d(0, -4px, 0);
+    transform: translate3d(0, -4px, 0);
+}
+}  
+@keyframes animprojet {
+from {
+  transform: translateY(-1500px);
+  }
+  to{
+    transform: translateY(0px);
+  }
+  100%,20%,53%,80% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, .61, .355, 1);
+    transition-timing-function: cubic-bezier(0.215, .61, .355, 1);
+    -webkit-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+40%, 43% {
+    -webkit-transition-timing-function: cubic-bezier(0.755, .050, .855, .060);
+    transition-timing-function: cubic-bezier(0.755, .050, .855, .060);
+    -webkit-transform: translate3d(0, -30px, 0);
+    -ms-transform: translate3d(0, -30px, 0);
+    transform: translate3d(0, -30px, 0);
+}
+70% {
+    -webkit-transition-timing-function: cubic-bezier(0.755, .050, .855, .060);
+    transition-timing-function: cubic-bezier(0.755, .050, .855, .060);
+    -webkit-transform: translate3d(0, -15px, 0);
+    -ms-transform: translate3d(0, -15px, 0);
+    transform: translate3d(0, -15px, 0);
+}
+90% {
+    -webkit-transform: translate3d(0, -4px, 0);
+    -ms-transform: translate3d(0, -4px, 0);
+    transform: translate3d(0, -4px, 0);
+}
+}
+@keyframes animdev {
+  from {
+    transform: translateY(-1000px);
+    }
+    to{
+      transform: translateY(0px);
+    }
+    100%,20%,53%,80% {
+      -webkit-transition-timing-function: cubic-bezier(0.215, .61, .355, 1);
+      transition-timing-function: cubic-bezier(0.215, .61, .355, 1);
+      -webkit-transform: translate3d(0, 0, 0);
+      -ms-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+  }  
+  40%, 43% {
+      -webkit-transition-timing-function: cubic-bezier(0.755, .050, .855, .060);
+      transition-timing-function: cubic-bezier(0.755, .050, .855, .060);
+      -webkit-transform: translate3d(0, -30px, 0);
+      -ms-transform: translate3d(0, -30px, 0);
+      transform: translate3d(0, -30px, 0);
+  }
+  70% {
+      -webkit-transition-timing-function: cubic-bezier(0.755, .050, .855, .060);
+      transition-timing-function: cubic-bezier(0.755, .050, .855, .060);
+      -webkit-transform: translate3d(0, -15px, 0);
+      -ms-transform: translate3d(0, -15px, 0);
+      transform: translate3d(0, -15px, 0);
+  }
+  90% {
+      -webkit-transform: translate3d(0, -4px, 0);
+      -ms-transform: translate3d(0, -4px, 0);
+      transform: translate3d(0, -4px, 0);
+  }
+  }
+  @keyframes animtxt {
+    0% {
+       transform: rotate(0);
+       transform-origin: top left;
+       animation-timing-function: ease-in-out;
+    }
+    20% {
+       transform: rotate(95deg);
+       transform-origin: top left;
+       animation-timing-function: ease-in-out;
+    }
+    40% {
+       transform: rotate(55deg);
+       transform-origin: top left;
+       animation-timing-function: ease-in-out;
+    }
+    60% {
+      transform: rotate(85deg) translateY(0);
+      opacity: 1;
+      transform-origin: top left;
+      animation-timing-function: ease-in-out;
+   }
+    80% {
+       transform: rotate(60deg) translateY(0);
+       opacity: 1;
+       transform-origin: top left;
+       animation-timing-function: ease-in-out;
+    }
+    90% {
+       transform: translateY(330px) translateX(-40px);
+       opacity: 1;
+    }
+    100%{
+      transform: translateY(330px) translateX(-40px);
+    }
+ }
+ /*-----PAGE "PROJETS"-----
+------------------------*/
+.projets
 {
   display: flex;
   justify-content: space-around;
@@ -89,8 +308,6 @@ body
   height:80%;
   opacity: 0.97;
 }
-
-
 .h2site
 {
   color: #B99A3B;
@@ -98,14 +315,12 @@ body
   padding-left: 5%;
   margin: 12% 0%;
 }
-
 .h2cv
 {
   color: #B99A3B;
   padding-left: 33%;
   margin: 12% 0%;
 }
-
 .capture
 {
   width: 800px;
@@ -114,37 +329,45 @@ body
   transition: transform 1.2s;
   display:block;
 }
-
-.capture:hover
+.capture:active
 {
   -ms-transform: scale(2.2); /* IE 9 */
   -webkit-transform: scale(2.2); /* Safari 3-8 */
   transform: scale(2.2);
   transition: transform 1.2s;
   display:block;
- /*regarder translate*/
 }
-
-/* fin page "projet" */
-
-.index3
+/* fin page "projet" 
+-------------------*/
+/* PAGE "Developpement" 
+---------------------*/
+.developpementweb
 {
+  display: flex;
+  justify-content: space-around;
   background-color: black;
   position:absolute;
-  top: 175px;
-  left: 315px;
-  width: 70%;
-  height:65%;
+  top: 10%;
+  left: 11%;
+  width: 77%;
+  height:80%;
   opacity: 0.97;
 }
-
-.index4
+/* fin page "Developpement" 
+-------------------------*/
+/* PAGE "loisirs" 
+---------------*/
+.loisirs
 {
+  display: flex;
+  justify-content: space-around;
   background-color: black;
   position:absolute;
-  top: 175px;
-  left: 315px;
-  width: 70%;
-  height:65%;
+  top: 10%;
+  left: 11%;
+  width: 77%;
+  height:80%;
   opacity: 0.97;
 }
+/* fin page "loisirs" 
+-------------------*/
