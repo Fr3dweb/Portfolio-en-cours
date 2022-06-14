@@ -320,7 +320,6 @@ from {
 .projets
 {
   display: flex;
-  justify-content: space-around;
   background-color: black;
   position:absolute;
   top: 10%;
@@ -331,22 +330,25 @@ from {
 }
 .h2site
 {
+  font-size: 1.5rem;
   color: #B99A3B;
   text-align: center;
-  margin: 10% 0%;
+  margin: 10% 0% 5% 0%;
 }
 .h2cv
 {
+  font-size: 1.5rem;
   color: #B99A3B;
   text-align: center;
-  margin: 10% 0%;
+  margin: 10% 0% 5% 0%;
 }
 .capture1
 {
-  width: 95%;
-  height: 60%;
+  width: 98%;
+  max-width: 100%;
+  height: auto;
   outline: solid 2px #E6E5E2;
-  margin-left:2%;
+  margin-left: 1%;
 }
 .capture1:active
 {
@@ -355,10 +357,11 @@ from {
 }
 .capture2
 {
-  width: 95%;
-  height: 60%;
+  width: 98%;
+  max-width: 100%;
+  height: auto;
   outline: solid 2px #E6E5E2;
-  margin-left: 2%;
+  margin-left: 1%;
 }
 .capture2:active
 {
@@ -372,7 +375,6 @@ from {
 .developpementweb
 {
   display: flex;
-  justify-content: space-around;
   background-color: black;
   position:absolute;
   top: 10%;
@@ -388,7 +390,6 @@ from {
 .loisirs
 {
   display: flex;
-  justify-content: space-around;
   background-color: black;
   position:absolute;
   top: 10%;
@@ -399,3 +400,17 @@ from {
 }
 /* fin page "loisirs" 
 -------------------*/
+/*----"RESPONSIVE"-- 
+------------------*/
+@media screen and (max-width: 768px) 
+{
+  :root
+  {
+    font-size: 15px;
+  }
+  .projets
+  {
+    flex-direction: column;
+    text-align: center;
+  }
+}
