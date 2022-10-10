@@ -1,39 +1,58 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-      <!-- En-tête de la page -->
-        <meta charset="utf-8"/>
-        <link rel="stylesheet" href="page.css" />
-        <title>Portfolio</title>
-    </head>    
-  <body> 
-      <main class="galerie">
-          <section class="carre imageMarbre animprojet ">
-            <a href="./projets.html" class="pop">Projets</a>
-          </section>  
-          <section class="gold carre">
-              <p class="animtxt">
-                Salut, je suis Fred, né dans l’année 1991, <br />
-                j’ai eu un parcours professionel sectionersifié, <br />
-                mais suite à la décision de vouloir changer <br />
-                du métier de conducteur de train pour des<br />
-                raisons de confort de vie,<br />
-                je me suis tourné dans l’univers informatique<br />
-                que je souhaitais intégrer au moment de ma <br />
-                première orientation..<br />
-                Dorénavant sur les bons rails. 
-              </p>
-          </section>
-          <section class="carre imageMarbre animdev">
-              <a href="./developpementweb.html" class="pop">Developpement Web</a>
-          </section>        
-          <section class="carre rail2 animrail">
-          </section>          
-          <section class="carre imageMarbre animloisirs">
-            <a href="./loisirs.html" class="pop">Loisirs</a>    
-          </section>
-          <section class="carre imagepc2 animpc">
-          </section>
-      </main> 
-  </body>
+<head>
+    <!-- En-tête de la page -->
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="page.css"/>
+    <title>Portfolio</title>
+</head>
+<body>
+<main class="galerie">
+    <section class="carre imageMarbre animProjet ">
+        <p class="lienPop">Projets</p>
+        <div class="modal">
+            <div class="modal-content">
+                <span class="close-button">X</span>
+                <h1>Voici quelques aperçu de mes projets!</h1>
+            </div>
+        </div>
+    </section>
+    <section class="gold carre">
+        <container class="animtxt">
+            Je suis Fred, né en 1991,
+            j’ai eu un parcours professionel diversifié,
+            suite à ma décision de vouloir changer
+            de mon métier de conducteur de train pour des
+            raisons de confort de vie,
+            je me suis tourné à nouveau vers l’univers informatique
+            suite à un bilan de compétences, univers que je souhaitais
+            intégrer au moment de ma
+            première orientation.
+        </container>
+    </section>
+    <section class="carre imageMarbre animDev ">
+        <p class="lienPop">Langages Informatiques</p>
+        <div class="modal">
+            <div class="modal-content">
+                <span class="close-button">X</span>
+                <h1>!!!!!</h1>
+            </div>
+        </div>
+    </section>
+    <section class="carre rail2 animrail">
+    </section>
+    <section class="carre imageMarbre animContact ">
+        <p class="lienPop">Contacts</p>
+        <div class="modal">
+            <div class="modal-content">
+                <span class="close-button">X</span>
+                <h1>??????</h1>
+            </div>
+        </div>
+    </section>
+    <section class="carre imagepc2 animpc">
+    </section>
+</main>
+<script src="./script.js"></script>
+</body>
 </html>
