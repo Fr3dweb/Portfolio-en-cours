@@ -1,17 +1,37 @@
-var modal = document.querySelector(".modal");
-var lienPop = document.querySelector(".lienPop");
-var closeButton = document.querySelector(".close-button");
-
-function toggleModal() {
+function toggleModal(e) {
+    let parent = e.target.parentNode;
+    let modal = parent.querySelector('.modal')
     modal.classList.toggle("show-modal");
 }
 
-function windowOnClick(event) {
-    if (event.target === modal) {
-        toggleModal();
-    }
+let modals = document.querySelectorAll(".modal");
+
+function closeModals() {
+    modals.forEach((element) => {
+        element.classList.remove("show-modal");
+    })
 }
 
-lienPop.addEventListener("click", toggleModal);
-closeButton.addEventListener("click", toggleModal);
-window.addEventListener("click", windowOnClick);
+let lienPops = document.querySelectorAll(".lienPop");
+let closeButtons = document.querySelectorAll(".close-button");
+
+lienPops.forEach((element) => {
+    element.addEventListener("click", (e) => {
+        toggleModal(e)
+    });
+})
+
+closeButtons.forEach((element) => {
+    element.addEventListener("click", (e) => {
+        closeModals(e)
+    });
+})
+
+window.addEventListener("click", (e) => {
+    modals.forEach((element) => {
+        if(e.target === element){
+            element.classList.remove("show-modal");
+
+        }
+    })
+})

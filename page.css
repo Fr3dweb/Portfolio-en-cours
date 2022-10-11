@@ -127,6 +127,7 @@ body {
     top: -330px;
     right: -40px;
     position: relative;
+    z-index: 0;
     animation: animtxt 3s ease-in-out both;
     animation-delay: 1s;
 }
