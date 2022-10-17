@@ -1,14 +1,14 @@
-function toggleModal(e) {
+function togglePopup(e) {
     let parent = e.target.parentNode;
-    let modal = parent.querySelector('.modal')
-    modal.classList.toggle("show-modal");
+    let popup = parent.querySelector('.popup')
+    popup.classList.toggle("show-popup");
 }
 
-let modals = document.querySelectorAll(".modal");
+let popups = document.querySelectorAll(".popup");
 
-function closeModals() {
-    modals.forEach((element) => {
-        element.classList.remove("show-modal");
+function closePopups() {
+    popups.forEach((element) => {
+        element.classList.remove("show-popup");
     })
 }
 
@@ -17,20 +17,20 @@ let closeButtons = document.querySelectorAll(".close-button");
 
 lienPops.forEach((element) => {
     element.addEventListener("click", (e) => {
-        toggleModal(e)
+        togglePopup(e)
     });
 })
 
 closeButtons.forEach((element) => {
     element.addEventListener("click", (e) => {
-        closeModals(e)
+        closePopups(e)
     });
 })
 
 window.addEventListener("click", (e) => {
-    modals.forEach((element) => {
+    popups.forEach((element) => {
         if(e.target === element){
-            element.classList.remove("show-modal");
+            element.classList.remove("show-popup");
 
         }
     })
