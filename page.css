@@ -38,62 +38,6 @@ body {
     text-align: center;
 }
 
-.lienPop:hover {
-    text-transform: uppercase;
-    font-style: italic;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.popup {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    opacity: 0;
-    visibility: hidden;
-    transform: scale(1.1);
-    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
-}
-
-.Popup-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: black;
-    padding: 1rem 1.5rem;
-    width: 75%;
-    height: 75%;
-    border-radius: 0.5rem;
-    z-index: 2;
-}
-
-.projects
-{
-    width: 600px;
-    height: 300px;
-}
-
-.close-button {
-    float: right;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-.close-button:hover {
-    transform: scale(1.10);
-}
-
-.show-popup {
-    opacity: 1;
-    visibility: visible;
-    transform: scale(1.0);
-    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
-}
-
 
 .imageMarbre {
     background-image: url(./images/Marbre-or-blanc.png);
@@ -131,6 +75,119 @@ body {
     color: #B99A3B;
 }
 
+.lienPop:hover {
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/*Popup*/
+.popup {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    padding: 1rem 1.5rem;
+    width: 90%;
+    height: 90%;
+    border-radius: 0.5rem;
+    z-index: 2;
+}
+
+.parent_projects {
+    height: 95%;
+}
+
+.projects {
+    width: 600px;
+    height: 300px;
+}
+
+.parent_cross{
+    z-index: 5;
+    position: relative;
+
+}
+
+.close-button {
+    float: right;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.close-button:hover {
+    transform: scale(1.10);
+}
+
+.show-popup {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+/*Carousel*/
+
+.carousel {
+    height: 100%;
+}
+
+.carousel-item {
+    height: 100%;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+.carousel-item img {
+    height: 100%;
+    position: relative;
+    object-fit: contain;
+    object-position: center;
+}
+
+.carousel-item::after {
+    z-index: 2;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    content: "";
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+}
+
+.carousel-caption h5{
+    font-size: 4rem;
+    color: white;
+}
+
+.carousel-caption p{
+    font-size: 2rem;
+    color: white;
+}
+
+.carousel-item .carousel-caption, .carousel-control-prev, .carousel-control-next, .carousel-indicators button{
+    z-index: 3;
+}
+/*Animations
+-----------*/
 .animtxt {
     margin: 10%;
     position: relative;
@@ -154,8 +211,7 @@ body {
     animation: animdev 2.5s ease;
 }
 
-/*Animations
------------*/
+
 @keyframes animrail {
     from {
         transform: translateY(1500px);
@@ -237,95 +293,7 @@ body {
         transform: translateY(330px) translateX(-40px);
     }
 }
-
-/*!*-----PAGE "PROJETS"-----*/
-/*------------------------*!*/
-/*.projets {*/
-/*    display: flex;*/
-/*    background-color: black;*/
-/*    position: absolute;*/
-/*    top: 10%;*/
-/*    left: 10%;*/
-/*    width: 80%;*/
-/*    height: 80%;*/
-/*    opacity: 0.97;*/
-/*}*/
-
-/*.h2site {*/
-/*    font-size: 1.5rem;*/
-/*    color: #B99A3B;*/
-/*    text-align: center;*/
-/*    margin: 10% 0% 5% 0%;*/
-/*}*/
-
-/*.h2cv {*/
-/*    font-size: 1.5rem;*/
-/*    color: #B99A3B;*/
-/*    text-align: center;*/
-/*    margin: 10% 0% 5% 0%;*/
-/*}*/
-
-/*.capture1 {*/
-/*    width: 98%;*/
-/*    max-width: 100%;*/
-/*    height: auto;*/
-/*    outline: solid 2px #E6E5E2;*/
-/*    margin-left: 1%;*/
-/*}*/
-
-/*.capture1:active {*/
-/*    transition: transform 2s;*/
-/*    transform: translateY(-30px) translateX(387px) scale(2.05);*/
-/*}*/
-
-/*.capture2 {*/
-/*    width: 98%;*/
-/*    max-width: 100%;*/
-/*    height: auto;*/
-/*    outline: solid 2px #E6E5E2;*/
-/*    margin-left: 1%;*/
-/*}*/
-
-/*.capture2:active {*/
-/*    transition: transform 2s;*/
-/*    transform: translateY(-30px) translateX(-381px) scale(2.05);*/
-/*}*/
-
-/*!* fin page "projet"*/
-/*-------------------*!*/
-/*!* PAGE "Developpement" */
-/*---------------------*!*/
-/*.developpementweb {*/
-/*    display: flex;*/
-/*    background-color: black;*/
-/*    position: absolute;*/
-/*    top: 10%;*/
-/*    left: 10%;*/
-/*    width: 80%;*/
-/*    height: 80%;*/
-/*    opacity: 0.97;*/
-/*}*/
-
-/*!* fin page "Developpement"*/
-/*-------------------------*!*/
-/*!* PAGE "loisirs" */
-/*---------------*!*/
-/*.loisirs {*/
-/*    display: flex;*/
-/*    background-color: black;*/
-/*    position: absolute;*/
-/*    top: 10%;*/
-/*    left: 10%;*/
-/*    width: 80%;*/
-/*    height: 80%;*/
-/*    opacity: 0.97;*/
-/*}*/
-
-/*!* fin page "loisirs"*/
 /*----"RESPONSIVE"-- 
 ------------------*/
-@media screen and (max-width: 992px) {
-    :root {
-        font-size: 15px;
-    }
-}
+
+
